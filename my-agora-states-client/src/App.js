@@ -7,12 +7,12 @@ function App() {
 
   useEffect(() => {
     getDiscussion();
-  }, []);
+  }, []); 
 
   const getDiscussion = () => {
     return fetch(domain + "/discussions")
       .then((res) => res.json())
-      .then((data) => {
+      .then((data) => { 
         setDiscussions(data);
       });
   };
