@@ -20,7 +20,7 @@ function App() {
   const addDiscussion = ({ title, author, bodyText }) => {
     const newDiscussionData = {
       title: title,
-      author: author,
+      author: author, 
       bodyHTML: bodyText,
     };
     fetch(domain + "/discussions/", {

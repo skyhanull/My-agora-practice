@@ -7,7 +7,7 @@ export const Discussions = ({ discussions, deleteDiscussion }) => {
         {discussions.map((discussion) => {
           return <Discussion key={discussion.id} discussion={discussion} deleteDiscussion={deleteDiscussion}/>
         })}
-      </ul>
+      </ul> 
     </section>
   );
 };
