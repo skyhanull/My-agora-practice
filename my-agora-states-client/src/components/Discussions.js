@@ -8,6 +8,6 @@ export const Discussions = ({ discussions, deleteDiscussion }) => {
           return <Discussion key={discussion.id} discussion={discussion} deleteDiscussion={deleteDiscussion}/>
         })}
       </ul> 
-    </section>
+    </section> 
   );
 };
