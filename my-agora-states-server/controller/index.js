@@ -10,7 +10,7 @@ const getPageStartEnd = (limit, page) => {
 const handleRequestBody = (req, res) => {
   if (!req.body) return res.status(400).send("no request body");
   const { title, author, bodyHTML } = req.body;
-  if (!title && !author && !bodyHTML)
+  if (!title && !author && !bodyHTML) 
     return res.status(400).send("bad request");
   return true;
 };
